@@ -41,3 +41,11 @@ const digitalClock = () => {
     setInterval(digitalClock, 1000);
 }
 digitalClock();
+
+// title text blink  
+setInterval(blink, 400);
+
+function blink() {
+    const element = document.getElementById('showText');
+    element.classList.toggle("design");
+}
